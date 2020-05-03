@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script src="js/common.js"></script>
   </head>
 
   <body class="drawer drawer--right">
@@ -48,12 +49,5 @@
     </nav>
 
     <?php include("inc/footer.php"); ?>
-
-    <script>
-      // drawer
-      $(document).ready(function() {
-        $('.drawer').drawer();
-      });
-    </script>
   </body>
 </html>

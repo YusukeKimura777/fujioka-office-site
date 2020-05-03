@@ -1,5 +1,7 @@
 <header class="home-heading">
-  <p><a href="index.php">藤岡行政書士事務所</a></p>
+  <figure>
+    <a href="index.php"><img src="img/typo.svg" alt="ロゴ"></a>
+  </figure>
   
   <div class="pc">
     <nav class="home-heading-nav">

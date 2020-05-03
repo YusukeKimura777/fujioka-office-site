@@ -59,13 +59,8 @@ ul {
     align-items: center;
     background: $whitesmoke;
     
-    p {
+    figure {
       margin: 0;
-      font-size: 2.0rem;
-    }
-
-    a {
-      color: $black;
     }
     
     &-nav {
@@ -183,6 +178,7 @@ ul {
   &-menu-item {
     font-size: 2.0rem;
     padding: 1.5rem;
+    color: $darkgray;
   }
 }
 

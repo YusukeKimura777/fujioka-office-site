@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script src="js/common.js"></script>
     <!-- google map API key -->
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDZ0V7M2XO6OFDdU0w7tp6C7zPwh-TeSf4&callback=initMap" async></script>
   </head>
@@ -96,11 +97,6 @@
     </footer>
 
     <script>
-      // drawer
-      $(document).ready(function() {
-        $('.drawer').drawer();
-      });
-
       // google map
       function initMap() {
         var mapPosition = {lat: 35.017136, lng: 135.756428}

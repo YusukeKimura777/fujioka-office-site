@@ -49,13 +49,8 @@ ul, ol {
   background: #FAFAFA;
 }
 
-.home-heading p {
+.home-heading figure {
   margin: 0;
-  font-size: 2.0rem;
-}
-
-.home-heading a {
-  color: #000000;
 }
 
 .home-heading-nav ul {
@@ -118,6 +113,7 @@ ul, ol {
 .drawer-menu-item {
   font-size: 2.0rem;
   padding: 1.5rem;
+  color: #444444;
 }
 
 .blog-list {
