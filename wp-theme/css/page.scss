@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@import "common/const";
+@import "common/general";
+@import "common/container";
+@import "common/header";
+@import "common/header-title";
+@import "common/contact";
+@import "common/footer";
+
+.home {
+  &-title {
+    figure {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.page {
+  margin-top: (101/1280)*100vw;
+  font-size: 1.6rem;
+}

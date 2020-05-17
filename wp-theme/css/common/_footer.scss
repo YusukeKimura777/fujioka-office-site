@@ -1,0 +1,9 @@
+footer {
+  margin-top: (101/1280)*100vw;
+  height: 165px;
+  background: $darknavy;
+
+  @media (max-width: $breakpoint) {
+    margin-top: (75/375)*100vw;
+  }
+}

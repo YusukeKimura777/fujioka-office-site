@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import "common/const";
+@import "common/general";
+@import "common/container";
+@import "common/header";
+@import "common/header-title";
+@import "common/contact";
+@import "common/footer";
+
+.home {
+  &-title {
+    figure {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.service {
+  $this: &;
+
+  border: 15px solid $yellowwhite;
+
+  ul {
+    margin: (144/1280)*100vw 0 0 0;
+    padding: 0;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: (116/1280)*100vw;
+
+    &:nth-of-type(2) {
+      #{$this}-list {
+        h2 {
+          &:before {
+            content: '#02';
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      #{$this}-list {
+        h2 {
+          &:before {
+            content: '#03';
+          }
+        }
+      }
+
+      #{$this}-aside {
+        h2 {
+          &:before {
+            content: none;
+          }
+
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+
+  &-list {
+    width: 48%;
+
+    h2 {
+      font-family: 'avenirbold';
+      font-size: 2.4rem;
+      color: $darknavy;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1em;
+      
+      &:before {
+        content: '#01';
+        display: flex;
+        align-items: center;
+        padding: 21px 15px;
+        color: $white;
+        background: $darknavy;
+        margin-right: 45px;
+      }
+    }
+
+    p {
+      margin: 30px 0 0 0;
+      font-size: 1.4rem;
+      color: $silver;
+      line-height: 1.8;
+    }
+  }
+
+  &-aside {
+    width: 43%;
+    background: $yellowwhite;
+
+    h2 {
+      font-family: 'avenirbold';
+      font-size: 2.0rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 27.5px (67/1280)*100vw 0 (67/1280)*100vw;
+      letter-spacing: 0.1em;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        background-image: url(../img/doublequot@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 32px;
+        height: 85px;
+        margin: 23px (34/1280)*100vw 0 0;
+      }
+
+      &:after {
+        content: '';
+        display: inline-block;
+        background-image: url(../img/doublequot@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 32px;
+        height: 85px;
+        transform: scale(-1, -1);
+        margin: 0 0 28px (34/1280)*100vw;
+      }
+    }
+
+    ul {
+      margin: 23.5px 0 0 0;
+      list-style-type: disc;
+      list-style-position: inside;
+      padding: 0 (75/1280)*100vw;
+      font-size: 1.4rem;
+      color: $silver;
+    }
+
+    li {
+      display: list-item;
+      margin-bottom: 14px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin: 40px auto 56px auto;
+      padding: 24px 0;
+      width: 62%;
+      color: $white;
+      background: $darknavy;
+      border-radius: 100px;
+      font-family: 'avenirbold';
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  @media (max-width: $breakpoint) {
+    border: none;
+
+    li {
+      flex-direction: column;
+      margin-bottom: 44px;
+
+      &:last-child {
+        #{$this}-aside {
+          h2 {
+            margin: 44px (75/1280)*100vw 0 (75/1280)*100vw;
+          }
+        }
+      }
+    }
+
+    &-list {
+      width: auto;
+
+      h2 {
+        font-size: 2.2rem;
+
+        &:before {
+          padding: 16px 10px;
+          margin-right: 40px;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    &-aside {
+      width: auto;
+      margin-top: 34px;
+
+      h2 {
+        font-size: 1.8rem;
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      li {
+        margin-bottom: 9px;
+      }
+
+      a {
+        margin: 34px (75/1280)*100vw;
+        width: auto;
+        padding: 15px 0;
+      }
+    }
+  }
+}

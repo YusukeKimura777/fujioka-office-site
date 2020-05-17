@@ -1,0 +1,33 @@
+.contact {
+  padding-top: (156/1280)*100vw;
+
+  p {
+    display: block;
+    text-align: center;
+    font-size: 2.0rem;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    margin: 47px auto 0 auto;
+    padding: 34px 0;
+    width: 40%;
+    color: $white;
+    background: $darknavy;
+    border-radius: 100px;
+    font-family: 'avenirbold';
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: $breakpoint) {
+    a {
+      width: auto;
+      padding: 24px 0;
+      font-size: 1.6rem;
+    }
+  }
+}

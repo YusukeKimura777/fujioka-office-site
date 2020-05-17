@@ -1,0 +1,73 @@
+.home {  
+  &-heading {
+    padding: 20px (106/1280)*100vw 20px (96/1280)*100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $whitesmoke;
+    
+    figure {
+      margin: 0;
+      width: 194px;
+    }
+    
+    &-nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      li {
+        margin-left: (55/1280)*100vw;
+        font-size: 1.6rem;
+      }
+      
+      a {
+        color: $darkgray;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint) {
+    &-heading {
+      padding-left: 25px;
+      padding-right: 25px;
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.pc {
+  @media (max-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.iphone {
+  @media (min-width: $breakpoint) {
+    display: none;
+  }
+}
+
+.drawer {
+  &-hamburger {
+    width: 32px;
+    padding-top: 20px;
+    padding-right: 25px;
+  }
+
+  &-menu {
+    a {
+      font-size: 2.0rem;
+      color: $darkgray;
+    }
+  
+    li {
+      padding: 1.5rem;
+    }
+  }
+}

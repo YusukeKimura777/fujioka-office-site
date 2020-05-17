@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import "common/const";
+@import "common/general";
+@import "common/container";
+@import "common/header";
+@import "common/header-title";
+@import "common/footer";
+
+.blog {
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 47px;
+    grid-row-gap: 67px;
+    margin: (101/1280)*100vw 0 0 0;
+    padding: 0;
+
+    figure {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      margin-top: 7px;
+    }
+
+    time {
+      font-family: 'avenirbold';
+      font-size: 1.6rem;
+      color: $grey;
+    }
+
+    h3 {
+      margin: 11px 0 0 0;
+      font-size: 2.0rem;
+      letter-spacing: 0.1em;
+    }
+
+    a {
+      color: $darkgray;
+    }
+
+    p {
+      margin: 13px 0 0 0;
+      font-size: 1.6rem;
+      color: $grey;
+    }
+  }
+
+  @media (max-width: $breakpoint) {
+    &-list {
+      margin-top: 44px;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 18px;
+      grid-row-gap: 33px;
+
+      time {
+        font-size: 1.2rem;
+      }
+  
+      h3 {
+        font-size: 1.4rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.order {
+  margin-top: (136/1280)*100vw;
+  font-family: 'avenirbold';
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: $darknavy;
+    border: 1px solid $darknavy;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0 7.5px;
+  }
+
+  @media (max-width: $breakpoint) {
+    a {
+      width: 30px;
+      height: 30px;
+      margin: 0 2.5px;
+    }
+  }
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  margin: 0 7.5px;
+}
+
+.current {
+  color: $white;
+  background: $darknavy;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 7.5px;
+
+  @media (max-width: $breakpoint) {
+    width: 30px;
+    height: 30px;
+    margin: 0 2.5px;
+  }
+}

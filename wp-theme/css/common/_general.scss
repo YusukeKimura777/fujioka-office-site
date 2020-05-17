@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'avenirregular';
+  src: url('../font/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'avenirbold';
+  src: url('../font/AvenirNextLTPro-Bold.otf');
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'avenirregular', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+}
