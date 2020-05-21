@@ -62,7 +62,7 @@
       add_action( 'wp_enqueue_scripts', 'twpp_enqueue_styles' );
       ?>
     <?php endif; ?>
-    <?php if (is_page('blog') || is_category()): ?>
+    <?php if (is_archive()): ?>
       <?php
       function twpp_enqueue_styles() {
         wp_enqueue_style( 

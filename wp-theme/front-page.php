@@ -130,38 +130,33 @@
         </li>
       </ul>
 
-      <a href="<?php echo get_permalink(64); ?>">詳しく見る</a>
+      <a class="btn" href="<?php echo get_permalink(64); ?>">詳しく見る</a>
     </article>
 
     <article class="wrapper blog">
       <h2>BLOG</h2>
 
       <?php
-      $arg = array(
+      $args = array(
+        'post_type' => 'blog',
         'posts_per_page' => 6,
-        'orderby' => 'date',
-        'order' => 'DESC',
-        'category_name' => 'blog'
+        'paged' => $paged
       );
-      $posts = get_posts( $arg );
-      if( $posts ): 
+      $my_query = new WP_Query($args); 
       ?>
+      <?php if($my_query->have_posts()) : ?>
       <ul class="blog-list">
-      <?php
-      foreach ( $posts as $post ) :
-      setup_postdata( $post );
+      <?php 
+      while($my_query->have_posts()) : 
+      $my_query->the_post(); 
       ?>
       <?php include("inc/blogli.php"); ?>
-      <?php endforeach; ?>
+      <?php endwhile; ?>
       </ul>
       <?php endif; ?>
       <?php wp_reset_postdata(); ?>
 
-      <?php
-      $blog = get_term_by('slug', 'blog', 'category');
-      $blog_link = get_term_link($blog, 'category');
-      ?>
-      <a class="blog-link" href="<?php echo $blog_link; ?>">一覧を見る</a>
+      <a class="btn" href="<?php echo get_post_type_archive_link('blog'); ?>">一覧を見る</a>
     </article>
 
     <div id="map" class="map"></div>

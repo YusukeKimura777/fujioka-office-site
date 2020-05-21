@@ -48,6 +48,12 @@
     letter-spacing: 0.1em;
     padding: 15px 60px;
     border-radius: 100px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 
   @media (max-width: $breakpoint) {

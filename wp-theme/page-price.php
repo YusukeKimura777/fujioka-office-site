@@ -25,7 +25,7 @@
         <article class="price">
           <ul>
             <li id="it_legal_work" class="price-list">
-              <h2>IT法務</h2>
+              <h2 class="service-name">IT法務</h2>
 
               <section class="price-list-content">
                 <h3>IT法務顧問</h3>
@@ -41,7 +41,7 @@
               </aside>
             </li>
             <li id="visa_application_work" class="price-list">
-              <h2>ビザ申請業務</h2>
+              <h2 class="service-name">ビザ申請業務</h2>
 
               <div class="price-list-content">
                 <p>IT法務顧問継続的にリーガルチェック、法務サポートを行います。</p>
@@ -51,7 +51,7 @@
               </div>
             </li>
             <li id="house_accommodation_application" class="price-list">
-              <h2>民泊業務</h2>
+              <h2 class="service-name">民泊業務</h2>
               <strong>
                 住宅宿泊事業届等の申請<br>
                 色々なご提案ができます。直接当社までお問い合わせください直接お問い合わせください

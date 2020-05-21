@@ -4,6 +4,7 @@
 @import "common/general";
 @import "common/container";
 @import "common/header";
+@import "common/blogli";
 @import "common/contact";
 @import "common/footer";
 
@@ -114,9 +115,32 @@
         font-size: 1.6rem;
         color: $darkgray;
         box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
 
         &:last-child {
           border-top: none;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: $darknavy;
+          transform: translateX(-100%);
+          transition: all 0.3s ease 0s;
+        }
+
+        &:hover {
+          color: $white;
+
+          &:before {
+            transform: translateX(0);
+          }
         }
       }
     }
@@ -192,77 +216,19 @@
     letter-spacing: 0.1em;
     color: $darkgray;
   }
+}
 
-  &-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 47px;
-    grid-row-gap: 67px;
-    margin: 40px 0 0 0;
-    padding: 0;
-
-    figure {
-      margin: 0;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    figcaption {
-      margin-top: 7px;
-    }
-
-    time {
-      font-family: 'avenirbold';
-      font-size: 1.6rem;
-      color: $grey;
-    }
-
-    h3 {
-      margin: 11px 0 0 0;
-      font-size: 2.0rem;
-      letter-spacing: 0.1em;
-    }
-
-    a {
-      color: $darkgray;
-    }
-
-    p {
-      margin: 13px 0 0 0;
-      font-size: 1.6rem;
-      color: $grey;
-    }
-  }
-
+.blog-list {
   @media (max-width: $breakpoint) {
-    &-list {
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 18px;
-      grid-row-gap: 33px;
-
-      li {
-        &:last-child {
-          display: none;
-        }
-      }
-
-      time {
-        font-size: 1.2rem;
-      }
-
-      h3 {
-        font-size: 1.4rem;
-      }
-
-      p {
-        font-size: 1.2rem;
+    li {
+      &:last-child {
+        display: none;
       }
     }
   }
 }
+
+
 
 .contact {
   margin-top: (82/1280)*100vw;

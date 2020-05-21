@@ -22,7 +22,7 @@
             <ul>
               <li>
                 <section class="service-list">
-                  <h2>IT法務</h2>
+                  <h2 class="service-name">IT法務</h2>
                   <p>
                     IT関連の契約書には紛争を予防するための「予防法務」としてとても大きな役割があり、サービスの内容をよく理解した上で作成をする必要があります。<br>
                     また知的財産権の管理など一般的な契約書とは違った内容を盛り込むことも必要です。<br>
@@ -39,12 +39,12 @@
                     <li>契約書ドラフト作成</li>
                     <li>IT法務研修など</li>
                   </ul>
-                  <a href="<?php echo get_permalink(67); ?>#it_legal_work">料金ページへ</a>
+                  <a class="btn" href="<?php echo get_permalink(67); ?>#it_legal_work">料金ページへ</a>
                 </aside>
               </li>
               <li>
                 <section class="service-list">
-                  <h2>ビザ申請業務</h2>
+                  <h2 class="service-name">ビザ申請業務</h2>
                   <p>
                     数多くの外国人IT技術者の在留資格申請業務に従事した経験を元に、<br>
                     当事務所では在留資格、永住申請・定住申請・帰化申請などの手続きを行ってまいります。<br>
@@ -60,12 +60,12 @@
                     <li>帰化申請</li>
                     <li>国籍取得など</li>
                   </ul>
-                  <a href="<?php echo get_permalink(67); ?>#visa_application_work">料金ページへ</a>
+                  <a class="btn" href="<?php echo get_permalink(67); ?>#visa_application_work">料金ページへ</a>
                 </aside>
               </li>
               <li>
                 <section class="service-list">
-                  <h2>民泊申請</h2>
+                  <h2 class="service-name">民泊申請</h2>
                   <p>
                     住宅宿泊事業法（いわゆる民泊新法）が2018年6月15日に施行されます。<br>
                     年々増加する訪日外国人旅行者の宿泊の受け皿として、今後民泊は全国で解禁され、各地で営業が行われます。<br>
@@ -80,7 +80,7 @@
                     色々なご提案ができます。<br>
                     直接当社までお問い合わせください
                   </h2>
-                  <a href="<?php echo get_permalink(82); ?>">お問い合わせ</a>
+                  <a class="btn" href="<?php echo get_permalink(82); ?>">お問い合わせ</a>
                 </aside>
               </li>
             </ul>

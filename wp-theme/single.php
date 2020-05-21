@@ -32,22 +32,21 @@
       <h2>最近の記事</h2>
 
       <?php
-      $arg = array(
+      $args = array(
+        'post_type' => 'blog',
         'posts_per_page' => 3,
-        'orderby' => 'date',
-        'order' => 'DESC',
-        'category_name' => 'blog'
+        'paged' => $paged
       );
-      $posts = get_posts( $arg );
-      if( $posts ): 
+      $my_query = new WP_Query($args);
       ?>
-      <ul class="asidepage-list">
-      <?php
-      foreach ( $posts as $post ) :
-      setup_postdata( $post );
+      <?php if($my_query->have_posts()) : ?>
+      <ul class="blog-list">
+      <?php 
+      while($my_query->have_posts()) : 
+      $my_query->the_post(); 
       ?>
       <?php include("inc/blogli.php"); ?>
-      <?php endforeach; ?>
+      <?php endwhile; ?>
       </ul>
       <?php endif; ?>
       <?php wp_reset_postdata(); ?>

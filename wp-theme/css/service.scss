@@ -5,21 +5,10 @@
 @import "common/container";
 @import "common/header";
 @import "common/header-title";
+@import "common/service-name";
+@import "common/btn";
 @import "common/contact";
 @import "common/footer";
-
-.home {
-  &-title {
-    figure {
-      margin: 0;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
 
 .service {
   $this: &;
@@ -72,26 +61,6 @@
   &-list {
     width: 48%;
 
-    h2 {
-      font-family: 'avenirbold';
-      font-size: 2.4rem;
-      color: $darknavy;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.1em;
-      
-      &:before {
-        content: '#01';
-        display: flex;
-        align-items: center;
-        padding: 21px 15px;
-        color: $white;
-        background: $darknavy;
-        margin-right: 45px;
-      }
-    }
-
     p {
       margin: 30px 0 0 0;
       font-size: 1.4rem;
@@ -111,7 +80,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 27.5px (67/1280)*100vw 0 (67/1280)*100vw;
+      margin: 27.5px auto 0 auto;
       letter-spacing: 0.1em;
 
       &:before {
@@ -120,7 +89,7 @@
         background-image: url(../img/doublequot@2x.png);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 32px;
+        min-width: 32px;
         height: 85px;
         margin: 23px (34/1280)*100vw 0 0;
       }
@@ -131,7 +100,7 @@
         background-image: url(../img/doublequot@2x.png);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 32px;
+        min-width: 32px;
         height: 85px;
         transform: scale(-1, -1);
         margin: 0 0 28px (34/1280)*100vw;
@@ -155,21 +124,6 @@
         margin-bottom: 0;
       }
     }
-
-    a {
-      display: block;
-      text-align: center;
-      margin: 40px auto 56px auto;
-      padding: 24px 0;
-      width: 62%;
-      color: $white;
-      background: $darknavy;
-      border-radius: 100px;
-      font-family: 'avenirbold';
-      font-size: 1.6rem;
-      font-weight: bold;
-      letter-spacing: 0.1em;
-    }
   }
 
   @media (max-width: $breakpoint) {
@@ -190,15 +144,6 @@
 
     &-list {
       width: auto;
-
-      h2 {
-        font-size: 2.2rem;
-
-        &:before {
-          padding: 16px 10px;
-          margin-right: 40px;
-        }
-      }
 
       p {
         font-size: 1.2rem;
@@ -222,12 +167,19 @@
       li {
         margin-bottom: 9px;
       }
-
-      a {
-        margin: 34px (75/1280)*100vw;
-        width: auto;
-        padding: 15px 0;
-      }
     }
+  }
+}
+
+.btn {
+  margin-top: 40px;
+  margin-bottom: 56px;
+  background: $darknavy;
+  width: 62%;
+
+  @media (max-width: $breakpoint) {
+    margin: 34px (75/1280)*100vw;
+    width: auto;
+    padding: 15px 0;
   }
 }

@@ -4,21 +4,13 @@
 @import "common/general";
 @import "common/container";
 @import "common/header";
+@import "common/header-title";
+@import "common/service-name";
 @import "common/contact";
 @import "common/footer";
 
 .home {  
   &-title {
-    h1 {
-      font-size: 4.8rem;
-      text-align: center;
-      margin: 0;
-      padding: (110/1280)*100vw 0;
-      color: $white;
-      background: $darknavy;
-      letter-spacing: 0.1em;
-    }
-
     &-nav {
       ul {
         display: flex;
@@ -30,6 +22,14 @@
         padding: 0 0 21px 0;
         border-bottom: 1px solid $darknavy;
         letter-spacing: 0.1em;
+      }
+
+      li {
+        transition: all 1s ease 0s;
+
+        &:hover {
+          transform: rotateY(360deg);
+        }
       }
       
       a {
@@ -51,11 +51,6 @@
 
   @media (max-width: $breakpoint) {    
     &-title {
-      h1 {
-        font-size: 3.6rem;
-        padding: 20px 0;
-      }
-
       &-nav {
         ul {
           font-size: 1.6rem;
@@ -98,25 +93,6 @@
         &:before {
           content: '#03';
         }
-      }
-    }
-
-    h2 {
-      font-family: 'avenirbold';
-      font-size: 2.4rem;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.1em;
-      
-      &:before {
-        content: '#01';
-        display: flex;
-        align-items: center;
-        padding: 21px 15px;
-        color: $white;
-        background: $darknavy;
-        margin-right: 45px;
       }
     }
 
@@ -216,15 +192,6 @@
     &-list {
       margin-bottom: 44px;
 
-      h2 {
-        font-size: 2.2rem;
-
-        &:before {
-          padding: 16px 10px;
-          margin-right: 40px;
-        }
-      }
-
       strong {
         font-size: 1.6rem;
       }
@@ -294,13 +261,3 @@
     }
   }
 }
-
-// footer {
-//   margin-top: (101/1280)*100vw;
-//   height: 165px;
-//   background: $darknavy;
-
-//   @media (max-width: $breakpoint) {
-//     margin-top: (75/375)*100vw;
-//   }
-// }

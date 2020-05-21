@@ -8,19 +8,6 @@
 @import "common/contact";
 @import "common/footer";
 
-.home {
-  &-title {
-    figure {
-      margin: 0;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
 .asidepage {
   display: flex;
   justify-content: space-between;

@@ -9,7 +9,7 @@
       <?php
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
       $args = array(
-        'category_name' => 'blog',
+        'post_type' => 'blog',
         'posts_per_page' => 12,
         'paged' => $paged
       );
