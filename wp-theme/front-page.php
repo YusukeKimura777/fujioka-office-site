@@ -4,7 +4,7 @@
         <section class="wrapper home-title">
           <h1>
             WEB INTEGRATION<br>
-            & LEGAL AFFAIRS
+            &amp; LEGAL AFFAIRS
           </h1>
 
           <div class="pc">
