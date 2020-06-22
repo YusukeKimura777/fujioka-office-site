@@ -23,7 +23,7 @@
     <?php endif; ?>
     <?php if (is_page_template('page-contact.php')): ?>
       <meta name="description" content="藤岡行政書士事務所の問い合わせ">
-    <? endif; ?>
+    <?php endif; ?>
     <?php if ( 
       !is_page_template('page-about.php') &&
       !is_page_template('page-price.php') &&
@@ -39,7 +39,7 @@
     <!-- drawer.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
 
-    <!-- style css -->
+<!-- style css -->
     <?php if(is_home()): ?>
       <?php
       function twpp_enqueue_styles() {
@@ -116,7 +116,7 @@
       }
       add_action( 'wp_enqueue_scripts', 'twpp_enqueue_styles' );
       ?>
-    <? endif; ?>
+    <?php endif; ?>
     <?php if ( 
       !is_page_template('page-about.php') &&
       !is_page_template('page-price.php') &&
