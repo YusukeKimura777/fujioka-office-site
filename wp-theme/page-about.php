@@ -51,7 +51,9 @@
 
         <article class="officedata">
           <figure class="officedata-content">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/krystian-krzewinski-SZ9y9PGVQbY-unsplash@2x.jpg" alt="藤岡さん">
+            <div class="officedata-content-fig">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/krystian-krzewinski-SZ9y9PGVQbY-unsplash@2x.jpg" alt="藤岡さん">
+            </div>
             <figcaption>
               <h2>Office data</h2>
               <dl>

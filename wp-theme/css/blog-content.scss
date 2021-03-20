@@ -81,10 +81,6 @@
   &-insert {
     margin: (120/1280)*100vw auto 0 auto;
     max-width: (409/1280)*100vw;
-  
-    img {
-      width: 100%;
-    }
   }
 
   &-share {
@@ -99,6 +95,7 @@
     img {
       width: 100%;
       height: auto;
+      vertical-align: bottom;
     }
 
     &-btn {

@@ -150,7 +150,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
 
-    img {
+    &-fig {
       width: 50%;
     }
 
@@ -198,7 +198,7 @@
       flex-direction: column;
       max-width: (325/375)*100vw;
 
-      img {
+      &-fig {
         width: 80%;
         margin: 0 auto;
       }

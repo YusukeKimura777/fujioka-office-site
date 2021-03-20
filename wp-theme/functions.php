@@ -12,4 +12,9 @@ add_theme_support('post-thumbnails');
 
 // カスタムメニュー
 add_theme_support('menus');
-?>
+
+// wordpressに自動挿入されるimgダグのwidth, height属性を削除
+add_filter( 'the_content', function( $html ){
+  $html = preg_replace( '/(width|height)="\d*"\s/', '', $html );
+  return $html;
+} );
